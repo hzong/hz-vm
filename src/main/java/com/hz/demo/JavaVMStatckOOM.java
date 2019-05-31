@@ -10,14 +10,14 @@ public class JavaVMStatckOOM {
     private int stackLength = 1;
 
 
-    public void dotStop(){
-        while(true){
+    public void dotStop() {
+        while (true) {
 
         }
     }
 
-    public void stackLeakByThread(){
-        while(true){
+    public void stackLeakByThread() {
+        while (true) {
             Thread thread = new Thread(new Runnable() {
                 @Override
                 public void run() {

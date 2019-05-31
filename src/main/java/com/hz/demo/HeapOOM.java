@@ -5,16 +5,14 @@ import java.util.List;
 
 /**
  * Hello world!
- *
  */
 public class HeapOOM {
 
-    static class OOMObject{
+    static class OOMObject {
 
     }
 
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         /**
          * -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError
          * -Xmx20m：设置JVM最大可用内存为20M。
@@ -26,8 +24,8 @@ public class HeapOOM {
          */
 
 
-        List<OOMObject> list =new ArrayList<>();
-        while(true){
+        List<OOMObject> list = new ArrayList<>();
+        while (true) {
             list.add(new OOMObject());
         }
     }

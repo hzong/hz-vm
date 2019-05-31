@@ -10,7 +10,7 @@ public class JavaVMStatckOF {
     private int stackLength = 1;
 
 
-    public void stackLeak(){
+    public void stackLeak() {
         stackLength++;
         stackLeak();
     }
@@ -25,8 +25,8 @@ public class JavaVMStatckOF {
              * 解决版本是：将设置栈的容量。
              */
             of.stackLeak();
-        }catch (Throwable e){
-            System.out.println("stack length:"+of.stackLength);
+        } catch (Throwable e) {
+            System.out.println("stack length:" + of.stackLength);
             throw e;
         }
     }

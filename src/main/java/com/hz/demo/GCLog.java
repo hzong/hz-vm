@@ -12,7 +12,7 @@ import java.util.List;
 public class GCLog {
     public static void main(String[] args) {
         List<Object> list = new ArrayList<>(10);
-        for (int i = 0; i <1000; i++) {
+        for (int i = 0; i < 1000; i++) {
             list.add("123123");
         }
 
